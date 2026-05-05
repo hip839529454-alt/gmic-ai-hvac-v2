@@ -92,7 +92,7 @@ export default function App() {
   const [activeImage, setActiveImage] = useState(0);
 
   const productImages = [
-    `${import.meta.env.BASE_URL}MIC051.jpg`,
+    "https://hearit.ai/wp-content/uploads/2026/05/MIC051.jpg",
     "/MIC052.jpg",
     "/MIC053.jpg",
     "/MIC054.jpg"
