@@ -93,9 +93,9 @@ export default function App() {
 
   const productImages = [
     "https://hearit.ai/wp-content/uploads/2026/05/MIC051.jpg",
-    "/MIC052.jpg",
-    "/MIC053.jpg",
-    "/MIC054.jpg"
+    "https://hearit.ai/wp-content/uploads/2026/05/MIC052.jpg",
+    "https://hearit.ai/wp-content/uploads/2026/05/MIC053.jpg",
+    "https://hearit.ai/wp-content/uploads/2026/05/MIC054.jpg"
   ];
 
   return (
@@ -219,7 +219,7 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative group">
                 <img 
-                  src="/havc1.jpg" 
+                  src="https://hearit.ai/wp-content/uploads/2026/05/havc1.jpg" 
                   alt="HVAC technician with GMIC AI wearable device working on an outdoor condenser unit" 
                   className="w-full h-full object-cover shadow-inner"
                   referrerPolicy="no-referrer"
@@ -272,7 +272,7 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-6">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-8">
-                <img src="/havc2.jpg" alt="Technician struggling with phone" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="https://hearit.ai/wp-content/uploads/2026/05/havc2.jpg" alt="Technician struggling with phone" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-2xl font-bold">Phones interrupt the job</h3>
               <p className="text-gray-600">Technicians cannot stop every few minutes to unlock a phone, open an app, type notes, or search for instructions while working on equipment.</p>
@@ -280,7 +280,7 @@ export default function App() {
             
             <div className="space-y-6">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-8">
-                <img src="/havc3.jpg" alt="Technician writing notes in van" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="https://hearit.ai/wp-content/uploads/2026/05/havc3.jpg" alt="Technician writing notes in van" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-2xl font-bold">Important details get missed</h3>
               <p className="text-gray-600">Symptoms, readings, parts used, customer approvals, and repair results are often spoken on site but never captured clearly.</p>
@@ -288,7 +288,7 @@ export default function App() {
 
             <div className="space-y-6">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-8">
-                <img src="/havc4.jpg" alt="Technician speaking to device" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="https://hearit.ai/wp-content/uploads/2026/05/havc4.jpg" alt="Technician speaking to device" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-2xl font-bold">Noise disrupts speech capture</h3>
               <p className="text-gray-600">Outdoor condensers, rooftop units, mechanical rooms, wind, traffic, and tools can make phone microphones unreliable for capturing technician speech clearly.</p>
@@ -463,28 +463,28 @@ export default function App() {
                 scene: "Scene 1",
                 title: "Voice-to-job notes",
                 desc: "Technician speech can become service notes, parts lists, customer summaries, and follow-up tasks.",
-                image: "/se1.jpg",
+                image: "https://hearit.ai/wp-content/uploads/2026/05/se1.jpg",
                 icon: MessageSquareText
               },
               {
                 scene: "Scene 2",
                 title: "AI troubleshooting support",
                 desc: "Technicians can ask questions about symptoms, error codes, readings, wiring checks, or next-step procedures.",
-                image: "/se2.jpg",
+                image: "https://hearit.ai/wp-content/uploads/2026/05/se2.jpg",
                 icon: History
               },
               {
                 scene: "Scene 3",
                 title: "Checklist and SOP guidance",
                 desc: "AI can guide technicians through inspection steps, safety checks, maintenance procedures, or company-specific workflows.",
-                image: "/se3.jpg",
+                image: "https://hearit.ai/wp-content/uploads/2026/05/se3.jpg",
                 icon: ClipboardCheck
               },
               {
                 scene: "Scene 4",
                 title: "Training and service quality review",
                 desc: "Field voice and button events can help managers review jobs, improve training, and standardize service quality.",
-                image: "/se4.jpg",
+                image: "https://hearit.ai/wp-content/uploads/2026/05/se4.jpg",
                 icon: History
               }
             ].map((scene, i) => (
@@ -661,9 +661,9 @@ export default function App() {
 
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             {[
-              "/GS1.jpg",
-              "/GS2.jpg",
-              "/GS3.jpg"
+              "https://hearit.ai/wp-content/uploads/2026/05/GS1.jpg",
+              "https://hearit.ai/wp-content/uploads/2026/05/GS2.jpg",
+              "https://hearit.ai/wp-content/uploads/2026/05/GS3.jpg"
             ].map((img, i) => (
               <motion.div 
                 key={i}
