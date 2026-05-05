@@ -222,8 +222,8 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative group">
                 <img 
-                  src="https://picsum.photos/seed/hvac-tech/1200/1500" 
-                  alt="HVAC technician working hands-free" 
+                  src="/input_file_0.png" 
+                  alt="GMIC AI wearable device in field use" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
