@@ -105,12 +105,12 @@ export default function App() {
         <div className="container-wide py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-brand-700">
-              GMIC AI Inc
+              MIC05 Inc
             </span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-            <a href="#why" className="hover:text-brand-600 transition-colors">Why GMIC AI</a>
+            <a href="#why" className="hover:text-brand-600 transition-colors">Why MIC05</a>
             <a href="#how-it-works" className="hover:text-brand-600 transition-colors">How It Works</a>
             <a href="#use-cases" className="hover:text-brand-600 transition-colors">Use Cases</a>
             <a href="#integration" className="hover:text-brand-600 transition-colors">Integration & Scale</a>
@@ -132,7 +132,7 @@ export default function App() {
             className="md:hidden bg-white border-b border-gray-100 p-6 absolute w-full"
           >
             <div className="flex flex-col gap-4 text-gray-600">
-              <a href="#why" onClick={() => setIsMenuOpen(false)}>Why GMIC</a>
+              <a href="#why" onClick={() => setIsMenuOpen(false)}>Why MIC05</a>
               <a href="#how-it-works" onClick={() => setIsMenuOpen(false)}>How It Works</a>
               <a href="#use-cases" onClick={() => setIsMenuOpen(false)}>Use Cases</a>
               <a href="#integration" onClick={() => setIsMenuOpen(false)}>Integration & Scale</a>
@@ -220,7 +220,7 @@ export default function App() {
               <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative group">
                 <img 
                   src="https://hearit.ai/wp-content/uploads/2026/05/havc1.jpg" 
-                  alt="HVAC technician with GMIC AI wearable device working on an outdoor condenser unit" 
+                  alt="HVAC technician with MIC05 wearable device working on an outdoor condenser unit" 
                   className="w-full h-full object-cover shadow-inner"
                   referrerPolicy="no-referrer"
                 />
@@ -377,7 +377,7 @@ export default function App() {
                 <div>
                   <span className="text-brand-300 font-bold uppercase tracking-widest text-sm mb-4 block">Hardware Selection</span>
                   <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-                    GMIC AI: a wearable voice device for HVAC field work.
+                    MIC05: a wearable voice device for HVAC field work.
                   </h2>
                 </div>
                 <div className="max-w-md w-full mx-auto lg:mx-0">
@@ -388,7 +388,7 @@ export default function App() {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5 }}
                       src={productImages[activeImage]} 
-                      alt="GMIC AI Product Shot" 
+                      alt="MIC05 Product Shot" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
@@ -410,7 +410,7 @@ export default function App() {
               {/* Content - Right Side */}
               <div className="order-2 lg:order-2">
                 <p className="text-brand-100 text-lg mb-10 leading-relaxed">
-                  GMIC AI is a compact chest-mounted device designed for technician voice capture, physical workflow control, short feedback, and app or cloud connectivity.
+                  MIC05 is a compact chest-mounted device designed for technician voice capture, physical workflow control, short feedback, and app or cloud connectivity.
                 </p>
 
                 <div className="space-y-4 mb-10">
@@ -439,7 +439,7 @@ export default function App() {
                     <Smartphone />
                   </div>
                   <p className="font-semibold text-base leading-snug">
-                    Use GMIC AI with your own software or partner with us for full app, firmware, and hardware customization.
+                    Use MIC05 with your own software or partner with us for full app, firmware, and hardware customization.
                   </p>
                 </div>
               </div>
@@ -453,8 +453,8 @@ export default function App() {
         <div className="container-wide">
           <SectionHeader 
             centered
-            title="What HVAC teams can do with GMIC AI."
-            subtitle="GMIC AI helps turn daily field conversations into job records, troubleshooting support, checklists, reports, and training data."
+            title="What HVAC teams can do with MIC05."
+            subtitle="MIC05 helps turn daily field conversations into job records, troubleshooting support, checklists, reports, and training data."
           />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -518,8 +518,8 @@ export default function App() {
         <div className="container-wide">
           <div className="max-w-6xl mx-auto shadow-2xl rounded-[2rem] overflow-hidden bg-white">
             <div className="p-12 bg-brand-900 text-white">
-              <h2 className="text-3xl font-bold mb-4">Why GMIC AI fits HVAC field work better.</h2>
-              <p className="text-brand-200 leading-relaxed">Phones and Bluetooth headsets can capture audio, but they are not built for noisy, hands-on HVAC workflows. GMIC AI is designed for field voice input, AI button actions, short feedback, and app integration.</p>
+              <h2 className="text-3xl font-bold mb-4">Why MIC05 fits HVAC field work better.</h2>
+              <p className="text-brand-200 leading-relaxed">Phones and Bluetooth headsets can capture audio, but they are not built for noisy, hands-on HVAC workflows. MIC05 is designed for field voice input, AI button actions, short feedback, and app integration.</p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-left table-fixed">
@@ -541,7 +541,7 @@ export default function App() {
                     <th className="p-8 font-bold text-brand-600 uppercase tracking-wider text-xs w-1/4 bg-brand-50/50">
                       <div className="flex items-center gap-2">
                         <Mic2 size={14} className="text-brand-600" />
-                        GMIC AI
+                        MIC05
                       </div>
                     </th>
                   </tr>
@@ -784,7 +784,7 @@ export default function App() {
             {/* Left side - Brand */}
             <div className="md:col-span-4 flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-gray-900 tracking-tight">GMIC AI Inc</span>
+                <span className="text-2xl font-bold text-gray-900 tracking-tight">MIC05 Inc</span>
               </div>
               <p className="text-gray-500 text-base max-w-xs leading-relaxed font-medium">
                 Professional wearable voice hardware for HVAC field AI workflows.
@@ -796,7 +796,7 @@ export default function App() {
               <div className="flex flex-col gap-4">
                 <h4 className="font-bold text-gray-900 text-sm">Product</h4>
                 <nav className="flex flex-col gap-3 text-sm text-gray-500">
-                  <a href="#why" className="hover:text-brand-600 transition-colors">Why GMIC AI</a>
+                  <a href="#why" className="hover:text-brand-600 transition-colors">Why MIC05</a>
                   <a href="#how-it-works" className="hover:text-brand-600 transition-colors">How It Works</a>
                   <a href="#use-cases" className="hover:text-brand-600 transition-colors">Use Cases</a>
                 </nav>
@@ -842,7 +842,7 @@ export default function App() {
           <div className="pt-10 border-t border-gray-100 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
               <p className="text-sm text-gray-400 font-medium italic">
-                © 2026 GMIC AI Inc. Built for field precision.
+                © 2026 MIC05 Inc. Built for field precision.
               </p>
             </div>
             <div className="md:col-span-4">
