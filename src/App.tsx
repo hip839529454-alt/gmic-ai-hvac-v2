@@ -92,7 +92,7 @@ export default function App() {
   const [activeImage, setActiveImage] = useState(0);
 
   const productImages = [
-    "/MIC051.jpg",
+    `${import.meta.env.BASE_URL}MIC051.jpg`,
     "/MIC052.jpg",
     "/MIC053.jpg",
     "/MIC054.jpg"
