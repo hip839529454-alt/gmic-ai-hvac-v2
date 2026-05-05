@@ -92,10 +92,10 @@ export default function App() {
   const [activeImage, setActiveImage] = useState(0);
 
   const productImages = [
-    "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1599708147891-689824327005?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1549439602-43ebcb232811?auto=format&fit=crop&q=80&w=800"
+    "public/MIC051.jpg",
+    "public/MIC052.jpg",
+    "public/MIC053.jpg",
+    "public/MIC054.jpg"
   ];
 
   return (
@@ -104,16 +104,13 @@ export default function App() {
       <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="container-wide py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">
-              M
-            </div>
             <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-brand-700">
               GMIC AI Inc
             </span>
           </div>
           
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-            <a href="#why" className="hover:text-brand-600 transition-colors">Why MIC05</a>
+            <a href="#why" className="hover:text-brand-600 transition-colors">Why GMIC AI</a>
             <a href="#how-it-works" className="hover:text-brand-600 transition-colors">How It Works</a>
             <a href="#use-cases" className="hover:text-brand-600 transition-colors">Use Cases</a>
             <a href="#integration" className="hover:text-brand-600 transition-colors">Integration & Scale</a>
@@ -135,7 +132,7 @@ export default function App() {
             className="md:hidden bg-white border-b border-gray-100 p-6 absolute w-full"
           >
             <div className="flex flex-col gap-4 text-gray-600">
-              <a href="#why" onClick={() => setIsMenuOpen(false)}>Why MIC05</a>
+              <a href="#why" onClick={() => setIsMenuOpen(false)}>Why GMIC</a>
               <a href="#how-it-works" onClick={() => setIsMenuOpen(false)}>How It Works</a>
               <a href="#use-cases" onClick={() => setIsMenuOpen(false)}>Use Cases</a>
               <a href="#integration" onClick={() => setIsMenuOpen(false)}>Integration & Scale</a>
@@ -222,9 +219,9 @@ export default function App() {
             >
               <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative group">
                 <img 
-                  src="/input_file_0.png" 
-                  alt="GMIC AI wearable device in field use" 
-                  className="w-full h-full object-cover"
+                  src="/public/havc1.jpg" 
+                  alt="HVAC technician with GMIC AI wearable device working on an outdoor condenser unit" 
+                  className="w-full h-full object-cover shadow-inner"
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent flex flex-end p-8 flex-col justify-end">
@@ -275,7 +272,7 @@ export default function App() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-6">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-8">
-                <img src="https://picsum.photos/seed/phone-struggle/800/800" alt="Technician struggling with phone" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="public/havc2.jpg" alt="Technician struggling with phone" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-2xl font-bold">Phones interrupt the job</h3>
               <p className="text-gray-600">Technicians cannot stop every few minutes to unlock a phone, open an app, type notes, or search for instructions while working on equipment.</p>
@@ -283,7 +280,7 @@ export default function App() {
             
             <div className="space-y-6">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-8">
-                <img src="https://picsum.photos/seed/van-notes/800/800" alt="Technician writing notes in van" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="public/havc3.jpg" alt="Technician writing notes in van" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-2xl font-bold">Important details get missed</h3>
               <p className="text-gray-600">Symptoms, readings, parts used, customer approvals, and repair results are often spoken on site but never captured clearly.</p>
@@ -291,7 +288,7 @@ export default function App() {
 
             <div className="space-y-6">
               <div className="aspect-square rounded-3xl overflow-hidden shadow-lg mb-8">
-                <img src="https://picsum.photos/seed/ai-voice/800/800" alt="Technician speaking to device" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                <img src="public/havc4.jpg" alt="Technician speaking to device" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
               </div>
               <h3 className="text-2xl font-bold">Noise disrupts speech capture</h3>
               <p className="text-gray-600">Outdoor condensers, rooftop units, mechanical rooms, wind, traffic, and tools can make phone microphones unreliable for capturing technician speech clearly.</p>
@@ -313,7 +310,7 @@ export default function App() {
             {[
               {
                 title: "Wear",
-                desc: "Clip MIC05 to the technician’s chest before the job starts.",
+                desc: "Clip the wearable device to the technician’s chest before the job starts.",
                 icon: Hand
               },
               {
@@ -380,7 +377,7 @@ export default function App() {
                 <div>
                   <span className="text-brand-300 font-bold uppercase tracking-widest text-sm mb-4 block">Hardware Selection</span>
                   <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-                    MIC05: a wearable voice device for HVAC field work.
+                    GMIC AI: a wearable voice device for HVAC field work.
                   </h2>
                 </div>
                 <div className="max-w-md w-full mx-auto lg:mx-0">
@@ -391,7 +388,7 @@ export default function App() {
                       animate={{ opacity: 1 }}
                       transition={{ duration: 0.5 }}
                       src={productImages[activeImage]} 
-                      alt="MIC05 Product Shot" 
+                      alt="GMIC AI Product Shot" 
                       className="w-full h-full object-cover"
                       referrerPolicy="no-referrer"
                     />
@@ -413,7 +410,7 @@ export default function App() {
               {/* Content - Right Side */}
               <div className="order-2 lg:order-2">
                 <p className="text-brand-100 text-lg mb-10 leading-relaxed">
-                  MIC05 is a compact chest-mounted device designed for technician voice capture, physical workflow control, short feedback, and app or cloud connectivity.
+                  GMIC AI is a compact chest-mounted device designed for technician voice capture, physical workflow control, short feedback, and app or cloud connectivity.
                 </p>
 
                 <div className="space-y-4 mb-10">
@@ -442,7 +439,7 @@ export default function App() {
                     <Smartphone />
                   </div>
                   <p className="font-semibold text-base leading-snug">
-                    Use MIC05 with your own software or partner with us for full app, firmware, and hardware customization.
+                    Use GMIC AI with your own software or partner with us for full app, firmware, and hardware customization.
                   </p>
                 </div>
               </div>
@@ -456,8 +453,8 @@ export default function App() {
         <div className="container-wide">
           <SectionHeader 
             centered
-            title="What HVAC teams can do with MIC05."
-            subtitle="MIC05 helps turn daily field conversations into job records, troubleshooting support, checklists, reports, and training data."
+            title="What HVAC teams can do with GMIC AI."
+            subtitle="GMIC AI helps turn daily field conversations into job records, troubleshooting support, checklists, reports, and training data."
           />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -466,28 +463,28 @@ export default function App() {
                 scene: "Scene 1",
                 title: "Voice-to-job notes",
                 desc: "Technician speech can become service notes, parts lists, customer summaries, and follow-up tasks.",
-                image: "https://picsum.photos/seed/voice-notes/800/600",
+                image: "public/se1.jpg",
                 icon: MessageSquareText
               },
               {
                 scene: "Scene 2",
                 title: "AI troubleshooting support",
                 desc: "Technicians can ask questions about symptoms, error codes, readings, wiring checks, or next-step procedures.",
-                image: "https://picsum.photos/seed/ai-support/800/600",
+                image: "public/se2.jpg",
                 icon: History
               },
               {
                 scene: "Scene 3",
                 title: "Checklist and SOP guidance",
                 desc: "AI can guide technicians through inspection steps, safety checks, maintenance procedures, or company-specific workflows.",
-                image: "https://picsum.photos/seed/sop-check/800/600",
+                image: "public/se3.jpg",
                 icon: ClipboardCheck
               },
               {
                 scene: "Scene 4",
                 title: "Training and service quality review",
                 desc: "Field voice and button events can help managers review jobs, improve training, and standardize service quality.",
-                image: "https://picsum.photos/seed/training-qc/800/600",
+                image: "public/se4.jpg",
                 icon: History
               }
             ].map((scene, i) => (
@@ -521,8 +518,8 @@ export default function App() {
         <div className="container-wide">
           <div className="max-w-6xl mx-auto shadow-2xl rounded-[2rem] overflow-hidden bg-white">
             <div className="p-12 bg-brand-900 text-white">
-              <h2 className="text-3xl font-bold mb-4">Why MIC05 fits HVAC field work better.</h2>
-              <p className="text-brand-200 leading-relaxed">Phones and Bluetooth headsets can capture audio, but they are not built for noisy, hands-on HVAC workflows. MIC05 is designed for field voice input, AI button actions, short feedback, and app integration.</p>
+              <h2 className="text-3xl font-bold mb-4">Why GMIC AI fits HVAC field work better.</h2>
+              <p className="text-brand-200 leading-relaxed">Phones and Bluetooth headsets can capture audio, but they are not built for noisy, hands-on HVAC workflows. GMIC AI is designed for field voice input, AI button actions, short feedback, and app integration.</p>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-left table-fixed">
@@ -544,7 +541,7 @@ export default function App() {
                     <th className="p-8 font-bold text-brand-600 uppercase tracking-wider text-xs w-1/4 bg-brand-50/50">
                       <div className="flex items-center gap-2">
                         <Mic2 size={14} className="text-brand-600" />
-                        MIC05
+                        GMIC AI
                       </div>
                     </th>
                   </tr>
@@ -664,9 +661,9 @@ export default function App() {
 
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             {[
-              "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800",
-              "https://images.unsplash.com/photo-1565514020179-026b92b84bb6?auto=format&fit=crop&q=80&w=800",
-              "https://images.unsplash.com/photo-1591955506264-3f5a6834570a?auto=format&fit=crop&q=80&w=800"
+              "public/GS1.jpg",
+              "public/GS2.jpg",
+              "public/GS3.jpg"
             ].map((img, i) => (
               <motion.div 
                 key={i}
@@ -787,9 +784,6 @@ export default function App() {
             {/* Left side - Brand */}
             <div className="md:col-span-4 flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-brand-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand-200">
-                  M
-                </div>
                 <span className="text-2xl font-bold text-gray-900 tracking-tight">GMIC AI Inc</span>
               </div>
               <p className="text-gray-500 text-base max-w-xs leading-relaxed font-medium">
@@ -802,7 +796,7 @@ export default function App() {
               <div className="flex flex-col gap-4">
                 <h4 className="font-bold text-gray-900 text-sm">Product</h4>
                 <nav className="flex flex-col gap-3 text-sm text-gray-500">
-                  <a href="#why" className="hover:text-brand-600 transition-colors">Why MIC05</a>
+                  <a href="#why" className="hover:text-brand-600 transition-colors">Why GMIC AI</a>
                   <a href="#how-it-works" className="hover:text-brand-600 transition-colors">How It Works</a>
                   <a href="#use-cases" className="hover:text-brand-600 transition-colors">Use Cases</a>
                 </nav>
