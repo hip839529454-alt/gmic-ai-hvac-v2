@@ -90,6 +90,7 @@ const FeatureCard = ({ icon: Icon, title, body, index }: { icon: any, title: str
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeImage, setActiveImage] = useState(0);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const productImages = [
     "https://hearit.ai/wp-content/uploads/2026/05/MIC051.jpg",
@@ -105,7 +106,7 @@ export default function App() {
         <div className="container-wide py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-brand-700">
-              MIC05 Inc
+              GMIC AI Inc
             </span>
           </div>
           
@@ -293,6 +294,59 @@ export default function App() {
               <h3 className="text-2xl font-bold">Noise disrupts speech capture</h3>
               <p className="text-gray-600">Outdoor condensers, rooftop units, mechanical rooms, wind, traffic, and tools can make phone microphones unreliable for capturing technician speech clearly.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Demo Section */}
+      <section className="py-24 bg-white">
+        <div className="container-wide">
+          <SectionHeader 
+            centered
+            title="See how MIC05 solves these field workflow problems."
+            subtitle="Watch how technicians move from phone interruptions and missed details to hands-free voice capture, AI notes, and faster job documentation."
+          />
+          
+          <div className="max-w-5xl mx-auto">
+            {/* 16:9 Video Area */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              className="aspect-video w-full rounded-[2.5rem] overflow-hidden bg-gray-900 shadow-2xl relative group border-8 border-white ring-1 ring-gray-100"
+            >
+              {!isVideoPlaying ? (
+                <>
+                  <div 
+                    onClick={() => setIsVideoPlaying(true)}
+                    className="absolute inset-0 bg-gradient-to-tr from-brand-900/40 to-transparent z-10 flex items-center justify-center cursor-pointer"
+                  >
+                    <div className="w-24 h-24 rounded-full bg-white/10 backdrop-blur-xl flex items-center justify-center text-white border border-white/20 group-hover:scale-110 group-hover:bg-brand-600 group-hover:border-transparent transition-all duration-500 shadow-2xl overflow-hidden">
+                      <div className="w-0 h-0 border-l-[20px] border-l-white border-y-[14px] border-y-transparent ml-2" />
+                    </div>
+                  </div>
+                  <img 
+                    src="https://hearit.ai/wp-content/uploads/2026/05/havc1.jpg" 
+                    alt="MIC05 Video Preview" 
+                    className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" 
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute bottom-8 left-8 z-20 flex items-center gap-3">
+                    <div className="px-3 py-1 bg-brand-600 text-white text-[10px] font-bold uppercase tracking-wider rounded-md shadow-lg">Demo Video</div>
+                    <div className="px-3 py-1 bg-black/40 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-wider rounded-md border border-white/10">00:15</div>
+                  </div>
+                </>
+              ) : (
+                <video 
+                  autoPlay 
+                  controls 
+                  className="w-full h-full object-cover"
+                  src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                >
+                  Your browser does not support the video tag.
+                </video>
+              )}
+            </motion.div>
+
           </div>
         </div>
       </section>
@@ -784,7 +838,7 @@ export default function App() {
             {/* Left side - Brand */}
             <div className="md:col-span-4 flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-gray-900 tracking-tight">MIC05 Inc</span>
+                <span className="text-2xl font-bold text-gray-900 tracking-tight">GMIC AI Inc</span>
               </div>
               <p className="text-gray-500 text-base max-w-xs leading-relaxed font-medium">
                 Professional wearable voice hardware for HVAC field AI workflows.
@@ -842,7 +896,7 @@ export default function App() {
           <div className="pt-10 border-t border-gray-100 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8">
               <p className="text-sm text-gray-400 font-medium italic">
-                © 2026 MIC05 Inc. Built for field precision.
+                © 2026 GMIC AI Inc. Built for field precision.
               </p>
             </div>
             <div className="md:col-span-4">
