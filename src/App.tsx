@@ -340,7 +340,7 @@ export default function App() {
                   autoPlay 
                   controls 
                   className="w-full h-full object-cover"
-                  src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                  src="https://videotourl.com/videos/1778205144521-70195697-37d9-418a-9d5a-0eb983799827.mp4"
                 >
                   Your browser does not support the video tag.
                 </video>
